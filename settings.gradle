@@ -14,7 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "DotaModule"
 include ':app'
-include ':core'
 include ':constants'
 
 include ':domain'
@@ -25,3 +24,4 @@ include ':features'
 include ':features:Hero-list'
 include ':features:Hero-Detail'
 include ':commons'
+include ':core'

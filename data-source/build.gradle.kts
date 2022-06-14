@@ -1,4 +1,4 @@
-apply{
+apply {
     from("$rootDir/library-build.gradle")
 }
 
@@ -15,4 +15,5 @@ dependencies {
     "implementation"(Ktor.android)
 
     "implementation"(SqlDelight.runtime)
+
 }

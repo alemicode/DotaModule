@@ -9,10 +9,10 @@ object Modules {
     const val constants = ":constants"
 
     const val hero = ":hero"
-    const val heroDataSource = ":hero-datasource"
-    const val heroDataSourceTest = ":hero-datasource-test"
+    const val heroDataSource = ":data-source"
+    const val heroDataSourceTest = ":datasource-test"
     const val heroDomain = ":domain"
-    const val heroInteractors = "hero-interactors"
-    const val ui_heroDetail = ":hero:ui-heroDetail"
-    const val ui_heroList = ":hero:ui-heroList"
+    const val heroInteractors = ":interactors"
+    const val ui_heroDetail = ":features:Hero-Detail"
+    const val ui_heroList = ":features:Hero-list"
 }

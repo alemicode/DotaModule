@@ -40,4 +40,44 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    implementation(project(Modules.core))
+    implementation(project(Modules.heroDataSource))
+    implementation(project(Modules.heroDomain))
+    implementation(project(Modules.heroInteractors))
+
+    implementation(project(Modules.ui_heroDetail))
+    implementation(project(Modules.ui_heroList))
+
+    implementation(Coil.coil)
+
+
+    implementation(AndroidX.coreKtx)
+    implementation(AndroidX.appCompat)
+    implementation(AndroidX.lifecycleVmKtx)
+
+    implementation(Compose.activity)
+    implementation(Compose.ui)
+    implementation(Compose.material)
+    implementation(Compose.tooling)
+    implementation(Compose.navigation)
+    implementation(Compose.hiltNavigation)
+
+    implementation(Google.material)
+
+    implementation(Hilt.android)
+
+    implementation(Kotlinx.serialization)
+    implementation(Ktor.core)
+
+    implementation(SqlDelight.androidDriver)
+
+    androidTestImplementation(AndroidXTest.runner)
+    androidTestImplementation(ComposeTest.uiTestJunit4)
+    debugImplementation(ComposeTest.uiTestManifest)
+    androidTestImplementation(HiltTest.hiltAndroidTesting)
+    androidTestImplementation(Junit.junit4)
+
+
 }
