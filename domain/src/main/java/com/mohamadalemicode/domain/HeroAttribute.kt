@@ -25,6 +25,7 @@ sealed class HeroAttribute(
     )
 }
 
+ //L
 fun getHeroAttrFromUiValue(uiValue: String): HeroAttribute{
     return when(uiValue){
         HeroAttribute.Agility.uiValue -> {
