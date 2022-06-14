@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "DotaModule"
+include ':app'
+include ':core'
+include ':constants'
+
+include ':domain'
+include ':interactors'
+include ':data-source'
+include ':features'
+
+include ':features:Hero-list'
+include ':features:Hero-Detail'
+include ':commons'
