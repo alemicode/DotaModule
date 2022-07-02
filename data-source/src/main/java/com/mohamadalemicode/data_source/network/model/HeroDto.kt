@@ -1,6 +1,10 @@
 package com.mohamadalemicode.data_source.network.model
-import com.codingwithmitch.hero_datasource.network.EndPoints.BASE_URL
-import com.codingwithmitch.hero_domain.*
+import com.codingwithmitch.hero_domain.getHeroAttackType
+import com.codingwithmitch.hero_domain.getHeroAttrFromAbreviation
+import com.codingwithmitch.hero_domain.getHeroRole
+import com.mohamadalemicode.data_source.network.EndPoints.BASE_URL
+import com.mohamadalemicode.domain.Hero
+
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

@@ -1,15 +1,16 @@
 package com.mohamadalemicode.interactors
 
-import com.codingwithmitch.core.domain.DataState
-import com.codingwithmitch.core.domain.ProgressBarState
-import com.codingwithmitch.core.domain.UIComponent
-import com.codingwithmitch.core.util.Logger
-import com.codingwithmitch.hero_datasource.network.HeroService
-import com.codingwithmitch.hero_domain.Hero
+import com.mohamadalemicode.core.core.domain.DataState
+import com.mohamadalemicode.core.core.domain.ProgressBarState
+import com.mohamadalemicode.data_source.cache.HeroCache
+import com.mohamadalemicode.data_source.network.HeroService
+import com.mohamadalemicode.domain.Hero
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 class GetHeros(
+
+    private val cache: HeroCache,
     private val service: HeroService
 ) {
     fun execute(): Flow<DataState<List<Hero>>> = flow {
@@ -32,12 +33,18 @@ class GetHeros(
                 listOf()
             }
 
+            // insert the netowrk data
+            cache.insert(heros)
+
+            val cacheHeros = cache.selectAll()
+
+
+
             emit(
                 DataState.Data(
-                    data = heros
+                    data = cacheHeros
                 )
             )
-
         } catch (e: Exception) {
 
             e.printStackTrace()
@@ -55,5 +62,4 @@ class GetHeros(
         }
 
     }
-
 }

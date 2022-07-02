@@ -1,6 +1,6 @@
-package com.codingwithmitch.hero_datasource.network
+package com.mohamadalemicode.data_source.network
 
-import com.codingwithmitch.hero_domain.Hero
+import com.mohamadalemicode.domain.Hero
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
 import io.ktor.client.features.json.*

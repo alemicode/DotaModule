@@ -1,4 +1,8 @@
-package com.codingwithmitch.hero_domain
+package com.mohamadalemicode.domain
+
+import com.codingwithmitch.hero_domain.HeroAttackType
+import com.codingwithmitch.hero_domain.HeroAttribute
+import com.codingwithmitch.hero_domain.HeroRole
 
 data class Hero(
     val id: Int,

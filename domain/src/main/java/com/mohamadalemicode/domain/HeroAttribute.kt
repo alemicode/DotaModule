@@ -1,6 +1,8 @@
  package com.codingwithmitch.hero_domain
 
-sealed class HeroAttribute(
+ import com.mohamadalemicode.domain.Hero
+
+ sealed class HeroAttribute(
     val uiValue: String,
     val abbreviation: String,
 ){

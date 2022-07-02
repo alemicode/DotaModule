@@ -5,6 +5,8 @@ apply {
 
 plugins {
     kotlin(KotlinPlugins.serialization) version Kotlin.version
+    id(SqlDelight.plugin)
+
 }
 
 dependencies {
@@ -16,4 +18,12 @@ dependencies {
 
     "implementation"(SqlDelight.runtime)
 
+}
+sqldelight {
+
+    database("HeroDatabase") {
+
+        packageName = "com.mohamadalemicode.data_source.cache"
+        sourceFolders = listOf("sqldelight")
+    }
 }

@@ -1,4 +1,6 @@
-package com.codingwithmitch.core.domain
+package com.mohamadalemicode.core.core.domain
+
+import com.mohamadaleicode.core.core.domain.UIComponent
 
 sealed class DataState<T> {
 

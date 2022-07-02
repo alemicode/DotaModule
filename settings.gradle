@@ -21,7 +21,8 @@ include ':interactors'
 include ':data-source'
 include ':features'
 
-include ':features:Hero-list'
-include ':features:Hero-Detail'
+
 include ':commons'
 include ':core'
+include ':features:Hero-Detail'
+include ':features:Hero-list'

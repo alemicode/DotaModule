@@ -1,4 +1,4 @@
-package com.codingwithmitch.core.domain
+package com.mohamadalemicode.core.core.domain
 
 sealed class ProgressBarState{
     

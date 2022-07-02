@@ -1,4 +1,4 @@
-package com.codingwithmitch.hero_datasource.network
+package com.mohamadalemicode.data_source.network
 
 object EndPoints {
     const val BASE_URL = "https://api.opendota.com"

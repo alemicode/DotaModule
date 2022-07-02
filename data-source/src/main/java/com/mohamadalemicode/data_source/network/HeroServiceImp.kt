@@ -1,13 +1,10 @@
 package com.mohamadalemicode.data_source.network
 
-import com.codingwithmitch.hero_datasource.network.EndPoints
-import com.codingwithmitch.hero_datasource.network.HeroService
-import com.codingwithmitch.hero_domain.Hero
+import com.mohamadalemicode.domain.Hero
 import com.mohamadalemicode.data_source.network.model.HeroDto
 import com.mohamadalemicode.data_source.network.model.toHero
 import io.ktor.client.*
 import io.ktor.client.request.*
-import kotlin.text.get
 
 class HeroServiceImp
 constructor(

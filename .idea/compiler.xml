@@ -14,16 +14,19 @@
       <module name="DotaModule.domain" target="1.8" />
       <module name="DotaModule.domain.main" target="1.8" />
       <module name="DotaModule.domain.test" target="1.8" />
-      <module name="DotaModule.features.Hero-Detail" target="1.8" />
+      <module name="DotaModule.features.Hero-Detail" target="11" />
       <module name="DotaModule.features.Hero-Detail.main" target="1.8" />
       <module name="DotaModule.features.Hero-Detail.test" target="1.8" />
-      <module name="DotaModule.features.Hero-list" target="1.8" />
+      <module name="DotaModule.features.Hero-list" target="11" />
       <module name="DotaModule.features.Hero-list.main" target="1.8" />
       <module name="DotaModule.features.Hero-list.test" target="1.8" />
       <module name="DotaModule.hero-list" target="11" />
       <module name="DotaModule.interactors" target="1.8" />
       <module name="DotaModule.interactors.main" target="1.8" />
       <module name="DotaModule.interactors.test" target="1.8" />
+      <module name="DotaModulefff.buildSrc" target="11" />
+      <module name="DotaModulefff.buildSrc.main" target="11" />
+      <module name="DotaModulefff.buildSrc.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
